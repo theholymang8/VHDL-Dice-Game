@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jul 13 16:41:22 2021
+# Process ID: 17992
+# Current directory: C:/Users/30694/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17104
+# Log file: C:/Users/30694/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/30694/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/30694/VHDL_FINAL/VHDL_FINAL.xpr
+update_compile_order -fileset sources_1
+open_project C:/Users/30694/VHDL_DICE5/VHDL_DICE5.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+current_project VHDL_FINAL
+current_project VHDL_DICE5
+set_property part xc7z010clg400-1 [current_project]
+current_project VHDL_FINAL
+current_project VHDL_DICE5
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property board_part digilentinc.com:zybo-z7-10:part0:1.0 [current_project]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/30694/VHDL_DICE5/VHDL_DICE5.runs/impl_1/dice_game.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/30694/VHDL_DICE5/VHDL_DICE5.runs/impl_1/dice_game.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+close_project
+archive_project C:/Users/30694/Desktop/VHDL_FINAL.xpr.zip -temp_dir C:/Users/30694/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-17992-mang8 -force -include_local_ip_cache -include_config_settings

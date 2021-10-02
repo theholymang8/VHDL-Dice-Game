@@ -1,0 +1,85 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Tue Jul 13 15:39:50 2021
+| Host         : mang8 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file dice_game_control_sets_placed.rpt
+| Design       : dice_game
+| Device       : xc7z010
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |     7 |
+|    Minimum number of control sets                        |     7 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    12 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |     7 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               4 |            4 |
+| No           | No                    | Yes                    |               8 |            3 |
+| No           | Yes                   | No                     |              48 |           12 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              16 |            6 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+---------------------------------------------+-------------------+------------------+----------------+--------------+
+|     Clock Signal     |                Enable Signal                |  Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------+---------------------------------------------+-------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG       |                                             |                   |                4 |              4 |         1.00 |
+|  clk_IBUF_BUFG       | FSM/FSM_sequential_current_state[3]_i_1_n_0 | newgame_IBUF      |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG       | dice_and_sum/Currstate_reg[0]_0[0]          | newgame_IBUF      |                2 |              4 |         2.00 |
+|  FSM/clock_div/CLK   |                                             | newgame_IBUF      |                3 |              8 |         2.67 |
+|  clock_div/clk_reg_0 | FSM/E[0]                                    | newgame_IBUF      |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG       |                                             | FSM/clock_div/clk |                6 |             24 |         4.00 |
+|  clk_IBUF_BUFG       |                                             | clock_div/clk     |                6 |             24 |         4.00 |
++----------------------+---------------------------------------------+-------------------+------------------+----------------+--------------+
+
+

@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/30694/VHDL_DICE5/VHDL_DICE5.srcs/sources_1/new/freq_dev.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'freq_div'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/30694/VHDL_DICE5/VHDL_DICE5.srcs/sources_1/new/dice_FSM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dice_FSM'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/30694/VHDL_DICE5/VHDL_DICE5.srcs/sources_1/new/dice_game.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dice_game'

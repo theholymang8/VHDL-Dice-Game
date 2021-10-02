@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1626179919">
+  <File Type="ROUTE-PWR" Name="dice_game_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="dice_game.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="dice_game_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="dice_game_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="dice_game.msk"/>
+  <File Type="ROUTE-CLK" Name="dice_game_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="dice_game.vdi"/>
+  <File Type="BG-BIT" Name="dice_game.bit"/>
+  <File Type="BG-DRC" Name="dice_game.drc"/>
+  <File Type="BG-BGN" Name="dice_game.bgn"/>
+  <File Type="BG-BIN" Name="dice_game.bin"/>
+  <File Type="BITSTR-RBT" Name="dice_game.rbt"/>
+  <File Type="BITSTR-NKY" Name="dice_game.nky"/>
+  <File Type="BITSTR-BMM" Name="dice_game_bd.bmm"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="dice_game_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="dice_game.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="dice_game.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="dice_game.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="dice_game_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="dice_game.hwdef"/>
+  <File Type="PLACE-IO" Name="dice_game_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="dice_game_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="dice_game_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="dice_game_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="dice_game_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="dice_game_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="dice_game_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="dice_game_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="dice_game_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="dice_game_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="dice_game_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="dice_game_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="dice_game_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="dice_game_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="dice_game_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="dice_game_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW" Name="dice_game_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="dice_game_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="dice_game_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="dice_game_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="dice_game_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="dice_game_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="dice_game_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="dice_game_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="dice_game_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="dice_game_postroute_physopt_bb.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="dice_game_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="dice_game_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="dice_game_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="dice_game.pdi"/>
+  <File Type="RCFI_FILE" Name="dice_game.rcfi"/>
+  <File Type="CFI_FILE" Name="dice_game.cfi"/>
+  <File Type="RNPI_FILE" Name="dice_game.rnpi"/>
+  <File Type="NPI_FILE" Name="dice_game.npi"/>
+  <File Type="RBD_FILE" Name="dice_game.rbd"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/freq_dev.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../VHDL_DICE5/VHDL_DICE5.srcs/sources_1/new/freq_dev.vhd"/>
+        <Attr Name="ImportTime" Val="1626179900"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/dice_FSM.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../VHDL_DICE5/VHDL_DICE5.srcs/sources_1/new/dice_FSM.vhd"/>
+        <Attr Name="ImportTime" Val="1626106272"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/dices_and_sum.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../VHDL_DICE5/VHDL_DICE5.srcs/sources_1/new/dices_and_sum.vhd"/>
+        <Attr Name="ImportTime" Val="1626104554"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/dice_game.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../VHDL_DICE5/VHDL_DICE5.srcs/sources_1/new/dice_game.vhd"/>
+        <Attr Name="ImportTime" Val="1625769654"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="dice_game"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/new/constraints.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../VHDL_DICE5/VHDL_DICE5.srcs/constrs_1/new/constraints.xdc"/>
+        <Attr Name="ImportTime" Val="1625758088"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>
